@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020617; /* Zifiri gece mavisi */
+  --foreground: #f8fafc;
+  --primary: #ef4444;    /* Canlı Kırmızı */
+  --primary-hover: #dc2626;
+  --secondary: #f97316;  /* Parlak Turuncu */
+  --accent: #eab308;     /* Altın Sarısı */
+  --muted: #1e293b;
+  --card: rgba(15, 23, 42, 0.6);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-outfit), var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease;
+  overflow-x: hidden;
 }
+
+/* Gürültü Dokusu (Premium Hissiyat) */
+.bg-noise {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Şık Cam Efekti */
+.ultra-glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.02), 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Hareketli Çizgi Çerçeve */
+.animated-border {
+  position: relative;
+}
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(from 0deg, transparent, var(--primary), var(--secondary), transparent 50%);
+  animation: spin 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  50%, 100% { transform: translateX(200%) skewX(-15deg); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.5; box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  70% { transform: scale(1); opacity: 0; box-shadow: 0 0 0 20px rgba(239, 68, 68, 0); }
+  100% { transform: scale(0.8); opacity: 0; box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+}
+
