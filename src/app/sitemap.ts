@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://724ankaratesisat.com'
 
   const districtUrls = districts.map((district) => ({
-    url: `${baseUrl}/${district.slug}`,
+    url: `${baseUrl}/${district.slug}-tesisatci`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.9,
