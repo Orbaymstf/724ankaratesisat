@@ -42,6 +42,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://724ankaratesisat.com",
   },
+  verification: {
+    google: "0_7cdgOaP1e790kb1VdN420FRe2ArAFZ_NJygXNTVCM",
+  },
   openGraph: {
     title: "7/24 Ankara Tesisatçı | Acil Müdahale Ekibi",
     description: "Ankara'da kırmadan su kaçağı tespiti, robotla tıkanıklık açma ve tüm sıhhi tesisat işleri için 30 dakikada adresinizdeyiz.",
