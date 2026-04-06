@@ -45,6 +45,10 @@ export const metadata: Metadata = {
   verification: {
     google: "0_7cdgOaP1e790kb1VdN420FRe2ArAFZ_NJygXNTVCM",
   },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "7/24 Ankara Tesisatçı | Acil Müdahale Ekibi",
     description: "Ankara'da kırmadan su kaçağı tespiti, robotla tıkanıklık açma ve tüm sıhhi tesisat işleri için 30 dakikada adresinizdeyiz.",
