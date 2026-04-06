@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { districts } from '@/lib/districts';
 import EmergencyHero from '@/components/EmergencyHero';
 import ServiceCards from '@/components/ServiceCards';
@@ -81,7 +82,7 @@ export default async function DistrictPage({ params }: Props) {
             <strong>{district.name} tesisatçı</strong> ihtiyaçlarınızda, 7 gün 24 saat kesintisiz ve profesyonel destek sunuyoruz. Evinizde veya iş yerinizde aniden ortaya çıkan su patlamaları, alt kata su sızmaları veya gider tıkanıklıkları beklemez. Bölgeyi çok iyi bilen mobil araçlı ekiplerimizle, <strong>{district.name}</strong> ve çevresindeki tüm mahallelere en geç 30 dakika içerisinde ulaşıyoruz.
           </p>
           <p>
-            Özellikle en büyük sorunlardan olan su kaçaklarında, eski usul "kırarak bulma" yöntemlerini çöpe atıyoruz. Gelişmiş akustik dinleme cihazlarımız ve yüksek çözünürlüklü termal kameralarımız sayesinde <strong>kırmadan su kaçağı bulma</strong> işlemini tek bir seramik bile kırmadan noktasal olarak gerçekleştiriyoruz. Eğer <strong>{district.name} tıkalı tuvalet açma</strong> veya pimaş tıkanıklığı gibi sorunlarınız varsa, robot helezon makinelerimizle borulara hiçbir zarar vermeden tıkanıklığı %100 garantili olarak söküp atıyoruz. Arızalara kalıcı çözümler bulmak ve acil servis talebinde bulunmak için iletişim hattımızdan bize dilediğiniz an ulaşabilirsiniz.
+            Özellikle en büyük sorunlardan olan su kaçaklarında, eski usul "kırarak bulma" yöntemlerini çöpe atıyoruz. Gelişmiş akustik dinleme cihazlarımız ve yüksek çözünürlüklü termal kameralarımız sayesinde <Link href="/su-kacagi-tespiti" className="text-red-700 font-bold hover:underline">kırmadan su kaçağı bulma</Link> işlemini tek bir seramik bile kırmadan noktasal olarak gerçekleştiriyoruz. Eğer <strong>{district.name}</strong> bölgesinde <Link href="/tikaniklik-acma" className="text-red-700 font-bold hover:underline">tıkalı tuvalet açma</Link> veya pimaş tıkanıklığı gibi sorunlarınız varsa, robot helezon makinelerimizle borulara hiçbir zarar vermeden tıkanıklığı %100 garantili olarak söküp atıyoruz. Arızalara kalıcı çözümler bulmak ve acil servis talebinde bulunmak için iletişim hattımızdan bize dilediğiniz an ulaşabilirsiniz.
           </p>
         </div>
       </section>
