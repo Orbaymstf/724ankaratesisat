@@ -49,7 +49,7 @@ export default async function DistrictPage({ params }: Props) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "PlumbingService",
+    "@type": "ProfessionalService",
     "name": `${district.name} Acil Tesisatçı - 7/24 Tesisat Servisi`,
     "url": `https://724ankaratesisat.com/${slug}`,
     "telephone": "+905368440799",

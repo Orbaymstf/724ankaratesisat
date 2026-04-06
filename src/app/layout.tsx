@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "PlumbingService",
+  "@type": "ProfessionalService",
   "name": "7/24 Ankara Tesisat",
   "image": "https://724ankaratesisat.com/logo.png",
   "url": "https://724ankaratesisat.com",
@@ -65,8 +65,8 @@ const jsonLd = {
   "priceRange": "₺₺",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "248"
+    "ratingValue": 4.9,
+    "reviewCount": 248
   },
   "address": {
     "@type": "PostalAddress",
