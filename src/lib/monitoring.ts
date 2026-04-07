@@ -30,6 +30,7 @@ export async function trackEvent(type: EventType, data: Record<string, any> = {}
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(payload),
+      keepalive: true, // Mobil tarayıcılarda (Arama/WhatsApp) isteğin yarıda kesilmesini önler
     });
 
     if (!response.ok) {
