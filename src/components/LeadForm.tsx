@@ -13,6 +13,9 @@ interface LeadFormProps {
 }
 
 export default function LeadForm({ initialService, initialDistrict }: LeadFormProps) {
+  // Form şimdilik görünmez yapıldı (Kullanıcı isteği)
+  return null;
+
   const [formState, setFormState] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [formData, setFormData] = useState({
     name: "",
