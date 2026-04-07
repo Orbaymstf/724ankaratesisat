@@ -9,39 +9,39 @@ const services = [
     title: "Su Kaçağı Tespiti",
     description: "Kırmadan dökmeden, son teknoloji cihazlarla su kaçağının yerini %100 tespit ediyoruz.",
     icon: Search,
-    color: "from-red-500 to-red-700",
-    shadow: "shadow-red-500/20",
+    color: "from-blue-600 to-indigo-700",
+    shadow: "shadow-blue-500/20",
     href: "/su-kacagi-tespiti"
   },
   {
     title: "Tıkalı Gider Açma",
     description: "Robot makinelerimizle giderlerinizi kırmadan, temiz bir şekilde saniyeler içinde açıyoruz.",
     icon: Droplets,
-    color: "from-orange-400 to-orange-600",
-    shadow: "shadow-orange-500/20",
+    color: "from-indigo-500 to-blue-600",
+    shadow: "shadow-indigo-500/20",
     href: "/tikaniklik-acma"
   },
   {
     title: "Gömme Rezervuar Tamiri",
     description: "Kale, Siamp, Geberit gibi tüm marka gömme rezervuar ve klozet iç takımları garantili onarıyoruz.",
     icon: Wrench,
-    color: "from-blue-600 to-blue-800",
-    shadow: "shadow-blue-500/20",
+    color: "from-sky-500 to-blue-600",
+    shadow: "shadow-sky-500/20",
     href: "/klozet-tamiri"
   },
   {
     title: "Petek Temizliği",
     description: "Verimli ısınma ve faturada net tasarruf için peteklerinizi kimyasal ilaçlı makinelerle temizliyoruz.",
     icon: ThermometerSun,
-    color: "from-yellow-400 to-yellow-600",
-    shadow: "shadow-yellow-500/20",
+    color: "from-amber-400 to-orange-500",
+    shadow: "shadow-amber-500/20",
     href: "/petek-temizligi"
   },
   {
     title: "Musluk & Batarya",
     description: "Aç-kapa batarya, ankastre musluk ve tüm tesisat ekipmanları profesyonel montaj ve değişim.",
     icon: Droplets,
-    color: "from-emerald-500 to-emerald-700",
+    color: "from-emerald-500 to-teal-700",
     shadow: "shadow-emerald-500/20",
     href: "#"
   },
@@ -49,7 +49,7 @@ const services = [
     title: "Sıhhi Tesisat Tamiri",
     description: "Eski tesisat yenileme, demir boru değişimi ve komple daire içi tesisat işleri.",
     icon: Wrench,
-    color: "from-slate-500 to-slate-700",
+    color: "from-slate-600 to-slate-800",
     shadow: "shadow-slate-500/20",
     href: "#"
   }

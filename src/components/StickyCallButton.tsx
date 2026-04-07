@@ -36,7 +36,7 @@ export default function StickyCallButton() {
           {/* Arama Butonu */}
           <a 
             href={telLink}
-            className="flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl bg-gradient-to-br from-primary to-primary-hover text-white text-lg font-black shadow-[0_10px_30px_-10px_rgba(220,38,38,0.8)] border border-white/10 active:scale-95 transition-transform"
+            className="flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl bg-gradient-to-br from-primary to-primary-hover text-white text-lg font-black shadow-[0_10px_30px_-10px_rgba(59,130,246,0.8)] border border-white/10 active:scale-95 transition-transform"
           >
             <Phone className="w-5 h-5 fill-white animate-pulse" />
             <span>ARA</span>

@@ -46,7 +46,7 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
       <motion.div 
         animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0], opacity: [0.15, 0.3, 0.15] }}
         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-        className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[150px] -z-10 translate-x-1/2 -translate-y-1/4"
+        className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-500/20 rounded-full blur-[150px] -z-10 translate-x-1/2 -translate-y-1/4"
       />
       <motion.div 
         animate={{ scale: [1, 1.3, 1], rotate: [0, -90, 0], opacity: [0.1, 0.2, 0.1] }}
@@ -62,12 +62,12 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
       >
         {/* 2. Levitating Ultra-Glass Native Vector Logo */}
         <div className="flex justify-center mb-4 relative z-20">
-          <div className="absolute inset-0 bg-primary/30 blur-[100px] rounded-full scale-150" />
+          <div className="absolute inset-0 bg-indigo-600/30 blur-[100px] rounded-full scale-150" />
           <motion.div 
             style={{ animation: 'float 6s ease-in-out infinite' }}
-            className="animated-border rounded-full p-[3px] shadow-[0_0_80px_rgba(239,68,68,0.3)]"
+            className="animated-border rounded-full p-[3px] shadow-[0_0_80px_rgba(59,130,246,0.3)]"
           >
-            <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-full bg-[#020617]/80 backdrop-blur-3xl flex items-center justify-center p-6 z-10 overflow-hidden border border-white/10">
+            <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-full bg-[#050B1A]/80 backdrop-blur-3xl flex items-center justify-center p-6 z-10 overflow-hidden border border-white/10">
                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/50 z-0" />
                
                {/* Native SVG / Text Logo Integration */}
@@ -115,9 +115,9 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
           </h1>
           
           <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-tight drop-shadow-2xl">
-             Krize <br className="hidden md:block" />
-             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 animate-gradient bg-[length:200%_auto]">
-               Anında Müdahale
+             Ankara&apos;nın <br className="hidden md:block" />
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-400 to-indigo-500 animate-gradient bg-[length:200%_auto]">
+               En Güvenilir İsmi
              </span>
           </h2>
           

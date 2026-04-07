@@ -24,7 +24,7 @@ export default function ServiceContentSlider({ districtName }: { districtName: s
       ),
       p2: (
         <>
-          Özellikle en büyük sorunlardan olan su kaçaklarında, eski usul &quot;kırarak bulma&quot; yöntemlerini çöpe atıyoruz. Gelişmiş akustik dinleme cihazlarımız ve yüksek çözünürlüklü termal kameralarımız sayesinde <Link href="/su-kacagi-tespiti" className="text-red-700 font-bold hover:underline">kırmadan su kaçağı bulma</Link> işlemini tek bir seramik bile kırmadan noktasal olarak gerçekleştiriyoruz.
+          Özellikle en büyük sorunlardan olan su kaçaklarında, eski usul &quot;kırarak bulma&quot; yöntemlerini çöpe atıyoruz. Gelişmiş akustik dinleme cihazlarımız ve yüksek çözünürlüklü termal kameralarımız sayesinde <Link href="/su-kacagi-tespiti" className="text-indigo-600 font-bold hover:underline">kırmadan su kaçağı bulma</Link> işlemini tek bir seramik bile kırmadan noktasal olarak gerçekleştiriyoruz.
         </>
       ),
     },
@@ -99,7 +99,7 @@ export default function ServiceContentSlider({ districtName }: { districtName: s
             className="space-y-6 text-slate-700 text-sm md:text-base leading-relaxed h-[380px] md:h-[280px]"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight flex items-center gap-3">
-              <span className="w-8 h-1 bg-red-600 rounded-full" />
+              <span className="w-8 h-1 bg-primary rounded-full" />
               {slides[currentSlide].title}
             </h2>
             <div className="space-y-4">
@@ -117,7 +117,7 @@ export default function ServiceContentSlider({ districtName }: { districtName: s
                 key={idx}
                 onClick={() => setCurrentSlide(idx)}
                 className={`h-1.5 transition-all duration-300 rounded-full ${
-                  currentSlide === idx ? "w-8 bg-red-600" : "w-2 bg-slate-300 hover:bg-slate-400"
+                  currentSlide === idx ? "w-8 bg-primary" : "w-2 bg-slate-300 hover:bg-slate-400"
                 }`}
                 aria-label={`Slide ${idx + 1}`}
               />
