@@ -1,8 +1,8 @@
 export const districtNames = [
-  "Akyurt", "Altındağ", "Ayaş", "Balâ", "Beypazarı", "Çamlıdere", "Çankaya", 
-  "Çubuk", "Elmadağ", "Etimesgut", "Evren", "Gölbaşı", "Güdül", "Haymana", 
-  "Kahramankazan", "Kalecik", "Keçiören", "Kızılcahamam", "Mamak", "Nallıhan", 
-  "Polatlı", "Pursaklar", "Sincan", "Şereflikoçhisar", "Yenimahalle"
+  "Akyurt", "Altındağ", "Ayaş", "Balâ", "Çankaya", 
+  "Çubuk", "Elmadağ", "Etimesgut", "Gölbaşı", "Güdül", "Haymana", 
+  "Kahramankazan", "Kalecik", "Keçiören", "Kızılcahamam", "Mamak", 
+  "Polatlı", "Pursaklar", "Sincan", "Yenimahalle"
 ];
 
 export function slugify(text: string): string {

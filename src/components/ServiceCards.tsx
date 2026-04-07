@@ -46,12 +46,12 @@ const services = [
     href: "#"
   },
   {
-    title: "Sıhhi Tesisat Tamiri",
-    description: "Eski tesisat yenileme, demir boru değişimi ve komple daire içi tesisat işleri.",
+    title: "Komple Tadilat & Yenileme",
+    description: "Fayans, alçı, boya ve komple daire içi değişim. Anahtar teslim modern tadilat çözümleri.",
     icon: Wrench,
     color: "from-slate-600 to-slate-800",
     shadow: "shadow-slate-500/20",
-    href: "#"
+    href: "/daire-ici-tadilat-ve-yenileme"
   }
 ];
 

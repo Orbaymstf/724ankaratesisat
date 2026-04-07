@@ -63,6 +63,11 @@ export default function Footer() {
             <li className="flex items-center gap-2 cursor-default">
               <span className="text-primary">•</span> Musluk & Batarya Montajı
             </li>
+            <li>
+              <Link href="/daire-ici-tadilat-ve-yenileme" className="hover:text-primary transition-colors flex items-center gap-2">
+                <span className="text-primary">•</span> Tadilat & Yenileme (Boya, Fayans)
+              </Link>
+            </li>
             <li className="flex items-center gap-2 cursor-default">
               <span className="text-primary">•</span> Banyo & Mutfak Tesisatı
             </li>
@@ -74,24 +79,15 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto mt-16 pt-12 border-t border-slate-900">
         <h4 className="text-white font-bold text-lg mb-8 text-center md:text-left tracking-wide">Ankara Hizmet Bölgelerimiz</h4>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-3 gap-x-4">
-          {[
-            "Akyurt", "Altındağ", "Ayaş", "Balâ", "Beypazarı", "Çamlıdere", "Çankaya", 
-            "Çubuk", "Elmadağ", "Etimesgut", "Evren", "Gölbaşı", "Güdül", "Haymana", 
-            "Kahramankazan", "Kalecik", "Keçiören", "Kızılcahamam", "Mamak", "Nallıhan", 
-            "Polatlı", "Pursaklar", "Sincan", "Şereflikoçhisar", "Yenimahalle"
-          ].map((d) => {
-            const slug = d.toLowerCase()
-              .replace(/ç/g, 'c').replace(/ğ/g, 'g').replace(/ı/g, 'i')
-              .replace(/İ/g, 'i').replace(/ö/g, 'o').replace(/ş/g, 's')
-              .replace(/ü/g, 'u').replace(/ /g, '-');
+          {districts.map((d) => {
             return (
               <Link 
-                key={d} 
-                href={`/${slug}-tesisatci`}
+                key={d.name} 
+                href={`/${d.slug}-tesisatci`}
                 className="text-slate-500 hover:text-primary transition-colors text-xs flex items-center gap-2 group"
               >
                 <span className="w-1 h-1 bg-slate-800 group-hover:bg-primary rounded-full transition-colors" />
-                {d} Tesisatçı
+                {d.name} Tesisatçı
               </Link>
             );
           })}

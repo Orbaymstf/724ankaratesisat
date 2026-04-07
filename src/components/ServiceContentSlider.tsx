@@ -67,6 +67,19 @@ export default function ServiceContentSlider({ districtName }: { districtName: s
         </>
       ),
     },
+    {
+      title: `${districtName} Komple Tadilat & Yenileme`,
+      p1: (
+        <>
+          <strong>{districtName} tadilat ve tamirat</strong> hizmetlerimizde, sadece tesisat değil; <strong>fayans, alçı ve boya</strong> işlerini de içeren komple daire içi değişim çözümleri sunuyoruz. Banyonuzu veya mutfağınızı sıfırdan tasarlıyor, anahtar teslim şekilde profesyonel usta ekibimizle yeniliyoruz.
+        </>
+      ),
+      p2: (
+        <>
+          Eski fayansların sökülmesi, yerine modern seramiklerin döşenmesi, duvarların alçı ve boya işlemleriyle tertemiz bir görünüme kavuşması için <strong>{districtName}</strong> genelinde hizmetinizdeyiz. Estetik, dayanıklılık ve uygun fiyatlı tadilatın adresi olarak hayalinizdeki evi inşa ediyoruz.
+        </>
+      ),
+    },
   ];
 
   useEffect(() => {

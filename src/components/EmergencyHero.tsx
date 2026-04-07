@@ -8,8 +8,8 @@ const heroServices = [
   "Cihazla Noktasal Su Kaçağı Tespiti",
   "Robot Makine ile Tıkalı Gider Açma",
   "Gömme Rezervuar & Klozet Tamiri",
-  "Kırmadan Dökmeden Profesyonel Çözüm",
-  "Musluk, Batarya & Sıhhi Tesisat Tamiri",
+  "Anahtar Teslim Komple Tadilat & Tamirat",
+  "Fayans, Alçı, Boya & Yenileme İşleri",
   "7/24 Acil Tesisat Müdahalesi",
 ];
 
