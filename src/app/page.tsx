@@ -1,6 +1,7 @@
 import EmergencyHero from "@/components/EmergencyHero";
 import ServiceCards from "@/components/ServiceCards";
 import SeoContent from "@/components/SeoContent";
+import LeadForm from "@/components/LeadForm";
 import FaqSection from "@/components/FaqSection";
 import DistrictList from "@/components/DistrictList";
 import StickyCallButton from "@/components/StickyCallButton";
@@ -12,6 +13,7 @@ export default function Home() {
       <EmergencyHero h1="Ankara Tesisatçı & 7/24 Acil Su Tesisatı" />
       <ServiceCards />
       <SeoContent />
+      <LeadForm />
       <FaqSection />
       <DistrictList />
       <Footer />

@@ -4,6 +4,7 @@ import ServiceCards from '@/components/ServiceCards';
 import DistrictList from '@/components/DistrictList';
 import StickyCallButton from '@/components/StickyCallButton';
 import Footer from '@/components/Footer';
+import LeadForm from '@/components/LeadForm';
 
 export const metadata: Metadata = {
   title: 'Ankara Klozet Tamiri & Gömme Rezervuar Servisi | 7/24 Acil',
@@ -83,6 +84,7 @@ export default function KlozetTamiriPage() {
       </section>
 
       <ServiceCards />
+      <LeadForm initialService="Klozet Tamiri" />
       <div className="relative z-10 bg-[#020617]">
         <DistrictList />
       </div>

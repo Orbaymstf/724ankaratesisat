@@ -4,6 +4,7 @@ import ServiceCards from '@/components/ServiceCards';
 import DistrictList from '@/components/DistrictList';
 import StickyCallButton from '@/components/StickyCallButton';
 import Footer from '@/components/Footer';
+import LeadForm from '@/components/LeadForm';
 
 export const metadata: Metadata = {
   title: 'Ankara Su Kaçağı Tespiti | Kırmadan Cihazla Su Kaçağı Bulma',
@@ -95,6 +96,7 @@ export default function SuKacagiPage() {
       </section>
 
       <ServiceCards />
+      <LeadForm initialService="Su Kaçağı Tespiti" />
       <div className="relative z-10 bg-[#020617]">
         <DistrictList />
       </div>

@@ -4,6 +4,7 @@ import ServiceCards from '@/components/ServiceCards';
 import DistrictList from '@/components/DistrictList';
 import StickyCallButton from '@/components/StickyCallButton';
 import Footer from '@/components/Footer';
+import LeadForm from '@/components/LeadForm';
 
 export const metadata: Metadata = {
   title: 'Ankara Tıkanıklık Açma | Robotla Kırmadan Gider Açma Servisi',
@@ -95,6 +96,7 @@ export default function TikaniklikAcmaPage() {
       </section>
 
       <ServiceCards />
+      <LeadForm initialService="Tıkanıklık Açma" />
       <div className="relative z-10 bg-[#020617]">
         <DistrictList />
       </div>

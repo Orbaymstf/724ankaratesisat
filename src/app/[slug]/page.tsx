@@ -7,6 +7,7 @@ import DistrictList from '@/components/DistrictList';
 import StickyCallButton from '@/components/StickyCallButton';
 import Footer from '@/components/Footer';
 import ServiceContentSlider from '@/components/ServiceContentSlider';
+import LeadForm from '@/components/LeadForm';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -96,6 +97,8 @@ export default async function DistrictPage({ params }: Props) {
       
       {/* Dynamic SEO Content Slider replacing the static block */}
       <ServiceContentSlider districtName={district.name} />
+
+      <LeadForm initialDistrict={district.name} />
 
       <Footer />
       

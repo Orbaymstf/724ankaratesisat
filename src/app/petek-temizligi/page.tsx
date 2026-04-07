@@ -4,6 +4,7 @@ import ServiceCards from '@/components/ServiceCards';
 import DistrictList from '@/components/DistrictList';
 import StickyCallButton from '@/components/StickyCallButton';
 import Footer from '@/components/Footer';
+import LeadForm from '@/components/LeadForm';
 
 export const metadata: Metadata = {
   title: 'Ankara Petek Temizliği & Kombi Bakımı | İlaçlı Makineli Temizlik',
@@ -83,6 +84,7 @@ export default function PetekTemizligiPage() {
       </section>
 
       <ServiceCards />
+      <LeadForm initialService="Petek Temizliği" />
       <div className="relative z-10 bg-[#020617]">
         <DistrictList />
       </div>

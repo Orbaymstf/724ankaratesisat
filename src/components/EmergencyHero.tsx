@@ -4,6 +4,7 @@ import { Phone, Clock, ShieldCheck, Zap, Droplet, Wrench } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { getPossessiveName } from "@/lib/districts";
+import { trackEvent } from "@/lib/monitoring";
 
 const heroServices = [
   "Cihazla Noktasal Su Kaçağı Tespiti",
@@ -151,6 +152,7 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
               <div className="absolute -inset-1 rounded-[1.5rem] bg-gradient-to-r from-primary via-secondary to-primary blur-xl opacity-70 group-hover:opacity-100 transition duration-500 group-hover:duration-200" />
               <a
                 href={telLink}
+                onClick={() => trackEvent("call", { district: districtName || "Ankara", location: "hero" })}
                 className="relative flex items-center justify-center gap-3 sm:gap-6 px-4 py-4 md:px-12 md:py-6 rounded-[1.5rem] bg-slate-900 border border-white/10 text-white overflow-hidden w-full h-full"
               >
                 <div className="absolute inset-0">
@@ -172,6 +174,7 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
                 href={`https://wa.me/905368440799?text=Merhaba,%20acil%20tesisat%20arızası%20için%20ulaşıyorum.`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent("whatsapp", { district: districtName || "Ankara", location: "hero" })}
                 className="relative flex items-center justify-center gap-3 sm:gap-6 px-4 py-4 md:px-12 md:py-6 rounded-[1.5rem] bg-slate-900 border border-[#25D366]/30 text-white overflow-hidden w-full h-full"
               >
                 <div className="absolute inset-0">
