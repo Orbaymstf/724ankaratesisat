@@ -3,6 +3,7 @@
 import { Phone, Clock, ShieldCheck, Zap, Droplet, Wrench } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { getPossessiveName } from "@/lib/districts";
 
 const heroServices = [
   "Cihazla Noktasal Su Kaçağı Tespiti",
@@ -116,7 +117,7 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
           </h1>
 
           <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-tight drop-shadow-2xl">
-            Ankara&apos;nın <br className="hidden md:block" />
+            {getPossessiveName(districtName || "Ankara")} <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-400 to-indigo-500 animate-gradient bg-[length:200%_auto]">
               En Güvenilir İsmi
             </span>
