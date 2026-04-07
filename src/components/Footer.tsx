@@ -11,8 +11,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-             <Image src="/logo.png" alt="Logo" width={40} height={40} className="object-contain" />
-             <span className="text-xl font-bold text-white tracking-tighter">7/24 ANKARA TESİSAT</span>
+            <Image src="/logo.png" alt="Logo" width={40} height={40} className="object-contain" />
+            <span className="text-xl font-bold text-white tracking-tighter">7/24 ANKARA TESİSAT</span>
           </div>
           <p className="text-sm leading-relaxed">
             Ankara'nın her semtine, her mahallesine 7 gün 24 saat kesintisiz hizmet veriyoruz. Profesyonel cihazlarla kırmadan dökmeden garantili çözüm.
@@ -81,8 +81,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-3 gap-x-4">
           {districts.map((d) => {
             return (
-              <Link 
-                key={d.name} 
+              <Link
+                key={d.name}
                 href={`/${d.slug}-tesisatci`}
                 className="text-slate-500 hover:text-primary transition-colors text-xs flex items-center gap-2 group"
               >
@@ -98,7 +98,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-slate-900/50 text-center text-slate-500 text-xs text-balance">
-        © {new Date().getFullYear()} 7/24 Ankara Tesisat. Tüm hakları saklıdır. <br className="md:hidden" /> 
+        © {new Date().getFullYear()} 7/24 Ankara Tesisat. Tüm hakları saklıdır. <br className="md:hidden" />
         Ankara geneli 7/24 acil sıhhi tesisat servisidir.
       </div>
     </footer>

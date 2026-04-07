@@ -22,21 +22,21 @@ export const metadata: Metadata = {
   keywords: [
     // Genel & Aciliyet
     "ankara tesisatçı", "acil tesisatçı", "7/24 tesisat", "su tesisatçısı", "nöbetçi tesisatçı", "gece açık tesisatçı", "en yakın tesisatçı", "tesisatçı numarası", "ankara su tamircisi", "sıhhi tesisat ustası",
-    
+
     // Su Kaçağı (Long tail)
     "ankara su kaçağı tespiti", "kameralı su tesisatçısı", "kırmadan su kaçağı bulma", "cihazla su kaçağı tespiti", "alt kata su damlıyor", "duvardan su sızıyor tesisatçı", "noktasal su kaçağı tespiti", "su sızıntısı bulma ankara", "gizli su kaçağı",
-    
+
     // Tıkalı Gider (Long tail)
     "ankara tıkanıklık açma", "robotla gider açma", "tıkalı tuvalet açma", "lavabo tıkanıklığı açma", "logar tıkanıklığı açma", "kırmadan pimaş açma", "klozet tıkandı su gitmiyor", "banyo gideri açma", "mutfak lavabosu açma ankara", "kanal açma",
-    
+
     // Petek & Kombi
     "petek temizliği ankara", "makineli petek temizliği", "havlupan montajı", "peteklerin altı ısınmıyor", "kombi su eksiltiyor tesisatçı", "kombi tesisat temizliği", "ilaçlı petek temizleme",
-    
+
     // Tamir & Montaj
     "klozet tamiri", "gömme rezervuar tamiri ankara", "musluk tamircisi", "batarya değişimi", "kombi su kaçağı", "sifon tamiri", "taharet musluğu değişimi", "duşakabin su sızdırıyor", "vitrifiye montajı", "çamaşır makinesi tesisatı", "bulaşık makinesi tesisatı",
-    
+
     // Şehir İçi Önemli Çapraz Bölgeler & Semtler
-    "keçiören tesisatçı", "çankaya tesisatçı", "yenimahalle tesisatçı", "mamak tesisatçı", "etimesgut tesisatçı", "sincan tesisatçı", 
+    "keçiören tesisatçı", "çankaya tesisatçı", "yenimahalle tesisatçı", "mamak tesisatçı", "etimesgut tesisatçı", "sincan tesisatçı",
     "batıkent tesisatçı", "çayyolu tesisatçı", "eryaman tesisatçı", "ümitköy tesisatçı", "kızılay tesisatçı", "dikmen tesisatçı", "bahçelievler tesisatçı", "bağlıca tesisatçı", "yaşamkent tesisatçı", "pursaklar tesisatçı", "gölbaşı tesisatçı"
   ].join(", "),
   alternates: {
