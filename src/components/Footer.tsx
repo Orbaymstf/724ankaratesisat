@@ -100,6 +100,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-slate-900/50 text-center text-slate-500 text-xs text-balance">
         © {new Date().getFullYear()} 7/24 Ankara Tesisat. Tüm hakları saklıdır. <br className="md:hidden" />
         Ankara geneli 7/24 acil sıhhi tesisat servisidir.
+        
+        <div className="mt-4 pt-4 border-t border-slate-900/30">
+          Bu proje bir <a href="https://arenyapitesisat.com" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-primary transition-colors font-bold underline underline-offset-4">Aren Yapı Tesisat</a> iştirakidir.
+        </div>
       </div>
     </footer>
   );
