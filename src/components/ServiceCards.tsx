@@ -22,19 +22,35 @@ const services = [
     href: "/tikaniklik-acma"
   },
   {
+    title: "Gömme Rezervuar Tamiri",
+    description: "Kale, Siamp, Geberit gibi tüm marka gömme rezervuar ve klozet iç takımları garantili onarıyoruz.",
+    icon: Wrench,
+    color: "from-blue-600 to-blue-800",
+    shadow: "shadow-blue-500/20",
+    href: "/klozet-tamiri"
+  },
+  {
     title: "Petek Temizliği",
     description: "Verimli ısınma ve faturada net tasarruf için peteklerinizi kimyasal ilaçlı makinelerle temizliyoruz.",
     icon: ThermometerSun,
     color: "from-yellow-400 to-yellow-600",
     shadow: "shadow-yellow-500/20",
+    href: "/petek-temizligi"
+  },
+  {
+    title: "Musluk & Batarya",
+    description: "Aç-kapa batarya, ankastre musluk ve tüm tesisat ekipmanları profesyonel montaj ve değişim.",
+    icon: Droplets,
+    color: "from-emerald-500 to-emerald-700",
+    shadow: "shadow-emerald-500/20",
     href: "#"
   },
   {
     title: "Sıhhi Tesisat Tamiri",
-    description: "Klozet, musluk, batarya ve her türlü acil tesisat arızasına kalıcı, garantili çözüm sunuyoruz.",
+    description: "Eski tesisat yenileme, demir boru değişimi ve komple daire içi tesisat işleri.",
     icon: Wrench,
-    color: "from-blue-500 to-blue-700",
-    shadow: "shadow-blue-500/20",
+    color: "from-slate-500 to-slate-700",
+    shadow: "shadow-slate-500/20",
     href: "#"
   }
 ];

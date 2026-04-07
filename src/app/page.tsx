@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="flex-grow">
-      <EmergencyHero />
+      <EmergencyHero h1="Ankara Tesisatçı & 7/24 Acil Su Tesisatı" />
       <ServiceCards />
       <DistrictList />
       <Footer />

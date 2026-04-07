@@ -40,15 +40,15 @@ export default function SuKacagiPage() {
   return (
     <main className="bg-background min-h-screen">
       <StickyCallButton />
-      <EmergencyHero />
+      <EmergencyHero h1="Ankara Su Kaçağı Tespiti & Tamiri" />
       
       {/* Detaylı SEO Bölümü */}
       <section className="py-16 px-4 md:px-8 bg-white text-slate-900 border-b border-slate-100">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
-            <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
               Kırmadan Cihazla Su Kaçağı Tespiti Ankara
-            </h1>
+            </h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
               Evinizde veya iş yerinizde gizli bir su sızıntısı mı var? Alt komşunuz tavanından su damladığını mı söylüyor? Artık fayansları kırmanıza, parkeleri sökmenize gerek yok!
             </p>

@@ -40,15 +40,15 @@ export default function TikaniklikAcmaPage() {
   return (
     <main className="bg-background min-h-screen">
       <StickyCallButton />
-      <EmergencyHero />
+      <EmergencyHero h1="Ankara Tıkanıklık Açma & Gider Temizliği" />
       
       {/* Detaylı SEO Bölümü */}
       <section className="py-16 px-4 md:px-8 bg-white text-slate-900 border-b border-slate-100">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="space-y-4">
-            <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight uppercase">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight uppercase">
               Robotla Kırmadan Tıkanıklık Açma Ankara
-            </h1>
+            </h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium capitalize">
               Tuvalet mi tıkandı? Mutfak lavabosundan su gitmiyor mu? Hemen bizi arayın, robot makinelerimizle hiçbir yeri kırmadan tıkanıklığı açalım!
             </p>

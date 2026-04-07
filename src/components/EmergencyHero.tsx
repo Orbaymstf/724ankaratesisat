@@ -7,12 +7,13 @@ import { useState, useEffect } from "react";
 const heroServices = [
   "Cihazla Noktasal Su Kaçağı Tespiti",
   "Robot Makine ile Tıkalı Gider Açma",
+  "Gömme Rezervuar & Klozet Tamiri",
   "Kırmadan Dökmeden Profesyonel Çözüm",
-  "Kimyasallı Petek ve Kombi Temizliği",
+  "Musluk, Batarya & Sıhhi Tesisat Tamiri",
   "7/24 Acil Tesisat Müdahalesi",
 ];
 
-export default function EmergencyHero({ districtName }: { districtName?: string }) {
+export default function EmergencyHero({ districtName, h1 }: { districtName?: string; h1?: string }) {
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
   const phoneNumber = "+90 536 844 07 99";
   const telLink = `tel:${phoneNumber.replace(/\s/g, "")}`;
@@ -108,12 +109,17 @@ export default function EmergencyHero({ districtName }: { districtName?: string 
 
         {/* 4. God Tier Typography scaled for Mobile with Animated Services */}
         <div className="space-y-4 px-2">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-tight drop-shadow-2xl">
+          {/* SEO Optimized H1 eyebrow */}
+          <h1 className="text-xs md:text-sm font-black text-primary tracking-[0.4em] uppercase glow-text mb-2 bg-primary/10 py-1 px-4 rounded-full inline-block">
+             {h1 || (districtName ? `${districtName} Tesisatçı & Acil Servis` : "Ankara Tesisatçı & 7/24 Sıhhi Tesisat")}
+          </h1>
+          
+          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white leading-tight drop-shadow-2xl">
              Krize <br className="hidden md:block" />
              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 animate-gradient bg-[length:200%_auto]">
                Anında Müdahale
              </span>
-          </h1>
+          </h2>
           
           <div className="flex flex-col items-center justify-center min-h-[80px] md:min-h-[100px] mt-4">
             <AnimatePresence mode="wait">
