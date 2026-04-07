@@ -27,6 +27,13 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    trackEvent('view', { 
+      path: window.location.pathname, 
+      district: districtName || "Ankara" 
+    });
+  }, [districtName]);
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-24 pb-16 px-4">
       {/* 1. Ultra Premium Background Layers */}
