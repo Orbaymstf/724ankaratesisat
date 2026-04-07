@@ -92,11 +92,13 @@ export default function ServiceCards() {
               href={service.href} 
               key={idx}
               className="block no-underline"
+              aria-label={`${service.title} - Ankara Tesisat Hizmeti Detayları`}
             >
               <motion.div 
                 variants={cardVariants}
                 whileHover={{ y: -8, scale: 1.02 }}
                 className="group h-full p-6 md:p-8 rounded-[2rem] bg-slate-900/50 backdrop-blur-lg border border-slate-800/80 hover:border-slate-600 transition-all duration-300 shadow-2xl overflow-hidden relative cursor-pointer"
+                title={`${service.title} Servisi`}
               >
                 <div className="absolute top-0 right-0 -mr-8 -mt-8 w-24 h-24 md:w-32 md:h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/10 transition-colors" />
                 
