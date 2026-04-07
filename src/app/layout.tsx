@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Geist_Mono } from "next/font/google";
+import { districts } from "@/lib/districts";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -91,14 +92,10 @@ const jsonLd = {
     "opens": "00:00",
     "closes": "23:59"
   },
-  "areaServed": [
-    { "@type": "City", "name": "Keçiören" },
-    { "@type": "City", "name": "Çankaya" },
-    { "@type": "City", "name": "Yenimahalle" },
-    { "@type": "City", "name": "Mamak" },
-    { "@type": "City", "name": "Etimesgut" },
-    { "@type": "City", "name": "Sincan" }
-  ],
+  "areaServed": districts.map(d => ({
+    "@type": "City",
+    "name": d.name
+  })),
   "description": "Ankara genelinde 7/24 garantili sıhhi tesisat tamiri, kırmadan cihazla su kaçağı tespiti ve robot cihazlarla tıkalı gider açma servisiyiz."
 };
 

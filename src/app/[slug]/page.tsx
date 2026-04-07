@@ -63,6 +63,25 @@ export default async function DistrictPage({ params }: Props) {
     "description": `${district.name} bölgesinde 7/24 kırmadan cihazla su kaçağı tespiti, tıkanıklık açma ve sıhhi tesisat tamir hizmetleri. 30 dakikada adrese varış garantisi.`
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Ana Sayfa",
+        "item": "https://724ankaratesisat.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": `${district.name} Tesisatçı`,
+        "item": `https://724ankaratesisat.com/${slug}`
+      }
+    ]
+  };
+
   return (
     <main className="bg-background min-h-screen">
       <StickyCallButton />
@@ -84,6 +103,10 @@ export default async function DistrictPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
     </main>
   );

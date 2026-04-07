@@ -37,6 +37,7 @@ export default function EmergencyHero({ districtName, h1 }: { districtName?: str
         <span
           className="text-[35vw] font-black tracking-tighter whitespace-nowrap select-none opacity-40 drop-shadow-[0_0_50px_rgba(255,255,255,0.05)]"
           style={{ WebkitTextStroke: '8px rgba(255,255,255,0.2)', color: 'transparent' }}
+          aria-label="7 gün 24 saat acil tesisat servisi"
         >
           7/24
         </span>

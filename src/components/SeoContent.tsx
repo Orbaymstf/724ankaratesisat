@@ -27,14 +27,22 @@ export default function SeoContent() {
           </div>
 
           <div className="space-y-6 text-slate-400 text-sm md:text-lg leading-relaxed">
-            <p>
-              Ankara genelinde 7/24 kesintisiz hizmet veren firmamız, <strong>Ankara Tesisat</strong> denildiğinde akla gelen ilk adreslerden biri olmanın gururunu yaşıyor. Kırmadan su kaçağı tespiti, robotla tıkanıklık açma ve komple daire yenileme işlerinde uzman usta kadromuzla, en karmaşık arızaları bile teknolojik cihazlarımızla kısa sürede çözüme kavuşturuyoruz.
-            </p>
-            <p>
-              Gelişmiş akustik dinleme cihazları, termal kameralar ve kanal görüntüleme sistemleri kullanarak, alt kata sızan su kaçaklarından can sıkan gider tıkanıklıklarına kadar her sorunu noktasal olarak tespit ediyoruz. Gereksiz kırım ve döküm işlemlerine son vererek, hem bütçenizi hem de evinizin düzenini koruyoruz.
-            </p>
+            <div className="space-y-2">
+              <h3 className="text-white font-bold text-lg md:text-xl">Kırmadan Cihazla Su Kaçağı Tespiti</h3>
+              <p>
+                Ankara genelinde 7/24 kesintisiz hizmet veren firmamız, <strong>Ankara Tesisat</strong> denildiğinde akla gelen ilk adreslerden biri olmanın gururunu yaşıyor. Keçiören, Çankaya, Yenimahalle ve Mamak dahil tüm ilçelerde kırmadan su kaçağı tespiti, robotla tıkanıklık açma ve komple daire yenileme işlerinde uzman usta kadromuzla hizmetinizdeyiz.
+              </p>
+            </div>
+            
+            <div className="space-y-2">
+              <h3 className="text-white font-bold text-lg md:text-xl">Robotla Gider ve Tıkanıklık Açma</h3>
+              <p>
+                Gelişmiş akustik dinleme cihazları, termal kameralar ve kanal görüntüleme sistemleri kullanarak, alt kata sızan su kaçaklarından can sıkan gider tıkanıklıklarına kadar her sorunu noktasal olarak tespit ediyoruz. Etimesgut, Sincan ve Pursaklar bölgelerine de sadece 30 dakikada ulaşıyoruz.
+              </p>
+            </div>
+
             <p className="font-medium text-slate-300">
-              Ankara&apos;nın her bölgesine (Çankaya, Keçiören, Yenimahalle, Mamak, Etimesgut ve Sincan dahil) tam donanımlı mobil araçlarımızla sadece 30 dakikada ulaşıyoruz.
+              Gereksiz kırım ve döküm işlemlerine son vererek hem bütçenizi hem de evinizin düzenini koruyoruz. Teknolojik cihazlarımızla kısa sürede kesin çözümler üretiyoruz.
             </p>
           </div>
 
