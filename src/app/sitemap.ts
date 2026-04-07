@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { districts } from '@/lib/districts'
+import { services } from '@/lib/services'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://724ankaratesisat.com'
@@ -11,6 +12,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
+  const districtServiceUrls = districts.flatMap((district) => 
+    services.map((service) => ({
+      url: `${baseUrl}/${district.slug}/${service.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }))
+  )
+
   return [
     {
       url: baseUrl,
@@ -18,6 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'always',
       priority: 1,
     },
+    ...districtUrls,
+    ...districtServiceUrls,
     {
       url: `${baseUrl}/su-kacagi-tespiti`,
       lastModified: new Date(),
@@ -48,6 +60,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    ...districtUrls,
   ]
 }

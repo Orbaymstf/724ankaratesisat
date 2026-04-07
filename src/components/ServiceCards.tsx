@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const services = [
   {
+    slug: "su-kacagi-tespiti",
     title: "Su Kaçağı Tespiti",
     description: "Kırmadan dökmeden, son teknoloji cihazlarla su kaçağının yerini %100 tespit ediyoruz.",
     icon: Search,
@@ -14,6 +15,7 @@ const services = [
     href: "/su-kacagi-tespiti"
   },
   {
+    slug: "tikaniklik-acma",
     title: "Tıkalı Gider Açma",
     description: "Robot makinelerimizle giderlerinizi kırmadan, temiz bir şekilde saniyeler içinde açıyoruz.",
     icon: Droplets,
@@ -22,6 +24,7 @@ const services = [
     href: "/tikaniklik-acma"
   },
   {
+    slug: "klozet-tamiri",
     title: "Gömme Rezervuar Tamiri",
     description: "Kale, Siamp, Geberit gibi tüm marka gömme rezervuar ve klozet iç takımları garantili onarıyoruz.",
     icon: Wrench,
@@ -30,6 +33,7 @@ const services = [
     href: "/klozet-tamiri"
   },
   {
+    slug: "petek-temizligi",
     title: "Petek Temizliği",
     description: "Verimli ısınma ve faturada net tasarruf için peteklerinizi kimyasal ilaçlı makinelerle temizliyoruz.",
     icon: ThermometerSun,
@@ -38,14 +42,7 @@ const services = [
     href: "/petek-temizligi"
   },
   {
-    title: "Musluk & Batarya",
-    description: "Aç-kapa batarya, ankastre musluk ve tüm tesisat ekipmanları profesyonel montaj ve değişim.",
-    icon: Droplets,
-    color: "from-emerald-500 to-teal-700",
-    shadow: "shadow-emerald-500/20",
-    href: "#"
-  },
-  {
+    slug: "daire-ici-tadilat-ve-yenileme",
     title: "Komple Tadilat & Yenileme",
     description: "Fayans, alçı, boya ve komple daire içi değişim. Anahtar teslim modern tadilat çözümleri.",
     icon: Wrench,
@@ -68,7 +65,7 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
 };
 
-export default function ServiceCards() {
+export default function ServiceCards({ districtSlug }: { districtSlug?: string }) {
   return (
     <section className="py-24 bg-[#050B14] px-4 relative overflow-hidden">
       {/* Decorative Grid */}
@@ -87,13 +84,16 @@ export default function ServiceCards() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
         >
-          {services.map((service, idx) => (
-            <Link 
-              href={service.href} 
-              key={idx}
-              className="block no-underline"
-              aria-label={`${service.title} - Ankara Tesisat Hizmeti Detayları`}
-            >
+          {services.map((service, idx) => {
+            const finalHref = districtSlug ? `/${districtSlug}/${service.slug}` : service.href;
+            
+            return (
+              <Link 
+                href={finalHref} 
+                key={idx}
+                className="block no-underline"
+                aria-label={`${service.title} - Ankara Tesisat Hizmeti Detayları`}
+              >
               <motion.div 
                 variants={cardVariants}
                 whileHover={{ y: -8, scale: 1.02 }}
@@ -108,8 +108,9 @@ export default function ServiceCards() {
                 <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-4 tracking-wide">{service.title}</h3>
                 <p className="text-xs md:text-sm text-slate-400 leading-relaxed">{service.description}</p>
               </motion.div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </motion.div>
       </div>
     </section>

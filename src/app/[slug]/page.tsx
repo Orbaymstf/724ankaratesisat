@@ -89,7 +89,7 @@ export default async function DistrictPage({ params }: Props) {
         districtName={district.name} 
         h1={`${district.name} Tesisatçı & Acil Su Tesisatçısı`} 
       />
-      <ServiceCards />
+      <ServiceCards districtSlug={district.slug} />
       <div className="relative z-10 bg-[#020617]">
         <DistrictList />
       </div>
