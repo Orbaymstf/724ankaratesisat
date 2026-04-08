@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Geist_Mono } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 import { districts } from "@/lib/districts";
 import "./globals.css";
 import Script from "next/script";
@@ -162,6 +163,7 @@ export default function RootLayout({
           `}
         </Script>
         {children}
+        <Analytics />
       </body>
     </html>
   );
