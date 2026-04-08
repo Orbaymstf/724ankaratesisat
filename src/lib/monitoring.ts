@@ -17,6 +17,20 @@ const WEBSITE_NAME = '7/24 Ankara Tesisat';
 
 export async function trackEvent(type: EventType, data: Record<string, any> = {}) {
   try {
+    // --- Google Ads Tracking ---
+    if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+      const gaId = 'AW-18038343026';
+      const conversionLabel = '0e-iCOf8o5gcEPKKrZlD';
+      
+      if (type === 'call' || type === 'whatsapp') {
+        (window as any).gtag('event', 'conversion', {
+          'send_to': `${gaId}/${conversionLabel}`,
+          'value': 1.0,
+          'currency': 'TRY'
+        });
+      }
+    }
+
     const payload: MonitoringData = {
       website: WEBSITE_NAME,
       type,
