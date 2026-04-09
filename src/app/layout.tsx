@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Geist_Mono } from "next/font/google";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 import { districts } from "@/lib/districts";
 import "./globals.css";
 import Script from "next/script";
